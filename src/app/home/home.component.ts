@@ -14,20 +14,18 @@ export class HomeComponent implements OnInit {
 
   ngOnInit()  : void{
     $(document).ready(()=>{
-      $('#myCarousel').bind('mousewheel', function(e) {
-        if(e.originalEvent.wheelDelta /120 > 0) {
-            $(this).carousel('next');
-        } else {
-            $(this).carousel('prev');
-        }
-    });
- 
-      $("#myCarousel").swiperight(function() {
-         $(this).carousel('prev');
-       });
-      $("#myCarousel").swipeleft(function() {
-         $(this).carousel('next');
-      });
+    
+$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
+});
 
 });
   }

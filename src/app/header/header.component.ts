@@ -7,7 +7,8 @@ declare var $:any;
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  selectItem: boolean = false;
+  focusOut : boolean = false;
   @ViewChild('stickyMenu' ,  {static: false}) menuElement: ElementRef;
 
   sticky: boolean = false;
@@ -16,6 +17,17 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $(document).ready(()=>{
+      
+    $('.nav a').on('click', function(){
+      if($(window).width() < 768){ 
+      $('.navbar-toggle').click(); //bootstrap 3.x by Richard
+      this.focusOut = false;
+      }
+    });
+
+
+});
   }
 
   ngAfterViewInit(){

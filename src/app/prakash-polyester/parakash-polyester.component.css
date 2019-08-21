@@ -11,7 +11,7 @@
     width:30vw;
     color:white;
 
-    background-color: rgba(210, 105, 30, 0.822);
+    background-color: rgba(46, 19, 19, 0.76);
     bottom:4vw;
     
 }
@@ -74,12 +74,12 @@
         
     }
     
-    .CompanyNameHeading{
-        font-size:4vw;
-    }
     
+    .CompanyNameHeading{
+        font-size:5vw;
+    }
     .SubTitle{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     a[title]{
         font-size: .5vw;
@@ -94,11 +94,10 @@
     }
     
     .CompanyNameHeading{
-        font-size:3vw;
+        font-size:5vw;
     }
-    
     .SubTitle{
-        font-size: 2vw;
+        font-size: 3.5vw;
     }
   
     a[title]{

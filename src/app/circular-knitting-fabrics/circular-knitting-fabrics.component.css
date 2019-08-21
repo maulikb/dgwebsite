@@ -11,7 +11,7 @@
     width:40vw;
     color:white;
 
-    background-color: rgba(210, 105, 30, 0.822);
+    background-color: rgba(46, 19, 19, 0.76);
     bottom:4vw;
     
 }
@@ -50,6 +50,9 @@
     }
     
     
+    .CompanyImage{
+        max-height:15vw;
+    }
 }
 @media screen and (min-width : 1024px) and (max-width : 1360px){
     .ImageTitle{
@@ -57,7 +60,10 @@
         height:4.5vw;
     }
     
- 
+    
+    .CompanyImage{
+        max-height:17vw;
+    }
   
     
 }
@@ -66,7 +72,6 @@
         font-size : 3vw;
         height:4.5vw;
     }
-    
     .CompanyNameHeading{
         font-size:3.0vw;
     }
@@ -74,6 +79,10 @@
     .SubTitle{
         font-size: 2vw;
     }
+    .CompanyImage{
+        max-height:23vw;
+    }
+    
   
   
     
@@ -86,10 +95,14 @@
     }
     
     .CompanyNameHeading{
-        font-size:4vw;
+        font-size:5vw;
     }
     .SubTitle{
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+    
+    .CompanyImage{
+        max-height:40vw;
     }
   
     
@@ -102,15 +115,18 @@
     }
     
     .CompanyNameHeading{
-        font-size:3vw;
+        font-size:5vw;
     }
-    
     .SubTitle{
-        font-size: 2vw;
+        font-size: 4vw;
     }
   
     .FabricTable td,th{
         font-size: 2vh;
+    }
+    
+    .CompanyImage{
+        max-height:40vw;
     }
    
 }
@@ -153,15 +169,12 @@
     padding-bottom:2.5vh;
     margin: auto;
     max-width : 100%;
-    max-height:auto;
+
     
 }
 .FaberciTableContainer{
 
    display: block;
-
-
-    
    padding-top:2.75vh;
    padding-bottom:2.75vh;
 
