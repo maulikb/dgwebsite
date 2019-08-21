@@ -1,0 +1,93 @@
+
+.HeaderDetail{
+ 
+    height:5vw;
+    width:100%;
+    z-index: 999;
+    
+} 
+.MenuBar{
+
+  z-index: 1;
+
+}
+.LogoContainer{
+    float : left;
+    height: 100%;
+    width:12%;
+}  
+.LogoImage{
+    display: block;
+    height: 100%;
+    width : 100%;
+}
+.Header{
+    letter-spacing: .1vw;
+
+}
+a:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+.CompanyDetailContainer{
+    transition: font-size 1s;
+    float :left;
+    text-align: center;
+    left: 10%;
+    height: 100%;
+    width:75%;
+
+}
+
+@media screen and (min-width : 701px ){
+    .HeaderDetail{
+        height:6vw;
+    }
+    .CompanyName{
+        font-size : 2.2vw;
+    }
+    .sticky{
+        position : fixed;
+    }
+        .ContactInfo{
+    height: 2.5vw;
+    font-size: 1.2vw;
+        }   
+
+}
+@media screen and (max-width : 700px ){
+    .HeaderDetail{
+        height:10vw;
+    }
+    .CompanyName{
+        font-size :3.5vw;
+    }
+    .sticky{
+        position : static;
+    }
+    .ContactInfo{
+        padding-top:2.5vw;
+        height: 3vw;
+        font-size: 2vw;      
+    }
+    
+
+
+}
+.sticky{
+    
+    top :0%;
+    width:100%;
+}
+.ContactInfoContainer{  
+    margin : .5vw;
+}
+.ContactIcons{
+
+    background-color: black;
+    color:rgb(138, 129, 170);
+    border-radius:50%;
+    padding : .25vw;
+
+}

@@ -1,0 +1,137 @@
+<div>
+    <div class="FrontImageContainer" style="animation-delay:1s;">
+        <div class="overlay fadeInLeft"></div>
+        <div class="ImageTitle animated fadeInRight">
+            <p style="display: block;text-transform: capitalize">Contact Us</p>
+        </div>
+        <img class="FrontImage " src="../../assets/Images/AboutUsImages/Fabric.jpg" />
+
+    </div>
+    <div class="col-lg-12 col-sm-12 col-xs-12 col-md-12">
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6">
+
+                <!--CompanyNameHeader from about us component-->
+                <div>
+                    <h2 class="CompanyNameHeading">
+                        d<span style="color:red;">g</span> knitting pvt. ltd.
+                    </h2>
+                </div>
+                <div class='AddressContainer'>
+                    <h3 class="SubTitle">
+                        register office &nbsp;:-
+                    </h3>
+                    <p class="Address">
+                        Swadeshi Market, 1st Floor,<br>
+                        Room No. B-316, Kalbadevi Road,<br>
+                        Mumbai - 400 002. INDIA.
+                    </p>
+
+                </div>
+                <div class='AddressContainer'>
+                    <h3 class="SubTitle">
+                        Contact Info &nbsp;:-
+                    </h3>
+                    <p class="Address">
+                        <b>Tel &nbsp;:- &nbsp;</b>(+91) 022-3253-4833 / (+91) 022-6634-2468
+                    </p>
+
+                    <p class="Address">
+                        <b>Fax &nbsp;:-&nbsp;</b> (+91) 022-2203-2897 </p>
+
+                    <p class="Address" >
+                        <b>Email &nbsp;:-&nbsp;</b>info@dgknitting.com
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-sm-6 col-xs-12 col-md-6 FormTableContainer">
+                <form #queryForm = "ngForm" (ngSubmit) = "handleSubmit($event,queryForm)" method="post">
+                <table class=" table table-hover FormTable">
+                    
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="FormTableHeader">
+                                submit your query
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="RowDivision">
+                                    <input class="form-control" name = "FName" type="text" placeholder="Enter Full Name " ngModel />
+                                    <span class="FormIcons">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="RowDivision">
+                                    <input class="form-control" name = "Email"  type="text" placeholder="Enter Email "  ngModel/>
+                                    <span class="FormIcons">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="RowDivision">
+                                    <input class="form-control" name = "MNo"  type="number" placeholder="Enter Mobile No."  ngModel/>
+                                    <span class="FormIcons">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="RowDivision">
+                                    <input class="form-control" name = "CName"  type="text" placeholder="Enter Company Name "  ngModel/>
+                                    <span class="FormIcons">
+                                        <i class="fa fa-industry"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="RowDivision">
+                                    <textarea  name = "Query"  class="form-control rounded-0"
+                                        id="exampleFormControlTextarea1" rows="6"
+                                        placeholder="Enter Query Messege" ngModel></textarea>
+                                    <span class="QueryMessegeIcon">
+                                        <i class="fa fa-question"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" style="width: 100%" class="btn btn-primary">Submit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+         
+                </table>
+            </form>
+            </div>
+        </div>
+        <div class="row">
+
+            <!---Google Map Location-->
+
+        </div>
+        <div class="row">
+            <agm 
+        </div>
+
+    </div>
+</div>

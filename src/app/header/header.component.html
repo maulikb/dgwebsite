@@ -1,0 +1,50 @@
+<div class="Header">
+    <div class="HeaderDetail">
+       
+        <div class="LogoContainer">
+            <img src="../../assets/dglogo.jpg" class="LogoImage" />
+        </div>
+        <div class="CompanyDetailContainer" >
+            <div style="width : 100%; height : 100%">
+                <p class="CompanyName">
+                    <span style="font-weight :bold; ">
+                        D<span style="color:red;">G</span> Knitting Pvt. Ltd.
+                    </span>
+                    <br>
+                    <span style="font-size :80%; ">
+                        Manufacturers Of Knitting And Weaving Fabrics
+                    </span>
+                </p>
+            </div>
+     
+       </div>
+    </div>
+    <div class="MenuBar"   #stickyMenu  [class.sticky]="sticky">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" routerLink='/home'><span><i class="fa fa-home"></i></span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav ">
+
+                        <li><a routerLink='/about-us'>About Us</a></li>
+                        <li><a routerLink='/circular-knitting-fabric'>Circular Knitting Fabrics</a></li>
+
+                 
+                 
+                        <li><a routerLink='/warp-knitting-fabic'>Warp Knittng Fabric</a></li>
+                        <li><a routerLink='/contact-us'>Contact Us</a></li>
+                        <li><a routerLink='/dg-polyester'>DG Polyester</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

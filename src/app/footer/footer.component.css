@@ -1,0 +1,34 @@
+.FooterContainer{
+    width : 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(13, 13, 12);  /* fallback for old browsers */
+    text-align: center;
+    vertical-align: middle;
+    color:white;
+    position:fixed;
+    bottom:0px;
+    left: 0px;
+    right: 0px;
+    
+}
+
+@media screen and (min-width : 0px) and (max-width : 768px){
+    .FooterText{
+        font-size:2.5vw; 
+        display: block;
+    } 
+    .FooterContainer{
+        height: 3.5vw;
+    }
+}
+
+@media screen and (min-width : 769px) {
+    .FooterText{
+        font-size:1vw; 
+        display: block;
+    } 
+    
+    .FooterContainer{
+        height: 2vw;
+    }
+}
